@@ -1,0 +1,84 @@
+/* Quita márgenes y ocupa 100% de alto */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;  /* Centrar verticalmente */
+    background-color: #f0f2f5;
+}
+  
+  /* Contenedor principal que ocupa toda la pantalla y centra */
+  .container {
+    width: 100vw; /* Asegurar que ocupa todo el ancho */
+    height: 100vh; /* Ocupar todo el alto */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #f0f2f5;
+}
+  
+  /* Caja del formulario */
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Etiquetas */
+  .label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Inputs */
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Botones */
+  .button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .button-secondary {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .button-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Mensaje de error o confirmación */
+  .message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+  }
