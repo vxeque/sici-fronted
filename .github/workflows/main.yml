@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  MyFirstJob:
+  ListsRepository:
     runs-on: ubuntu-latest 
     steps:
-      - run: echo "Hola a todos"
+      - run: echo "El repositorio se llama ${{ github.repository }} "
