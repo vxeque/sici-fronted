@@ -1,0 +1,14 @@
+# Primer workflow en Github Actions
+name: Primer workflow
+
+on:
+  push:
+    branches: 
+       -develop
+  workflow_dispatch:
+
+jobs:
+  MyFirstJob:
+    runs-on: ubuntu-latest 
+    steps:
+      - run: echo "Hola a todos"
